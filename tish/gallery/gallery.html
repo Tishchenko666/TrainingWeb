@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery_style.css">
+</head>
+<body>
+<h1>Welcome</h1>
+<h6>Live Workshop and Online Courses!</h6>
+
+<div class="my-prod">
+    <div class="my-prod-gallery">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211110154408/DSwithCPPWorkshopthumbnail.png"
+             alt="click here" onclick="myImageFunction(this)">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211110154411/fullstacknodereactworkshopthumbnail.png"
+             alt="click here" onclick="myImageFunction(this)">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211110154416/systemdesignworkshoplivethumbnail.png"
+             alt="click here" onclick="myImageFunction(this)">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211110154413/getplacedseries1thumbnail.png"
+             alt="click here" onclick="myImageFunction(this)">
+    </div>
+
+    <div class="image-container">
+        <img id="img-box"
+             src="https://media.geeksforgeeks.org/wp-content/uploads/20211110154408/DSwithCPPWorkshopthumbnail.png"
+             alt="click here">
+    </div>
+</div>
+
+<script>
+    function myImageFunction(productSmallImg) {
+        let productFullImg = document.getElementById("img-box");
+        productFullImg.src = productSmallImg.src;
+    }
+</script>
+
+</body>
+</html>

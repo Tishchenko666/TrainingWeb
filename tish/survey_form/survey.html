@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey_styles.css">
+</head>
+<body>
+<h1>My Survey Form</h1>
+
+<form>
+    <div class="form-control">
+        <label for="name" id="label-name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-control">
+        <label for="email" id="label-email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-control">
+        <label for="age" id="label-age">Age</label>
+        <input type="text" id="age" placeholder="Enter your age">
+    </div>
+
+    <div class="form-control">
+        <label for="role" id="label-role">
+            Which option best describes you?
+        </label>
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label>
+            Would you recommend us to a friend?
+        </label>
+        <label for="rec-1">
+            <input type="radio" id="rec-1" name="rec">
+            Yes
+        </label>
+        <label for="rec-2">
+            <input type="radio" id="rec-2" name="rec">
+            No
+        </label>
+        <label for="rec-3">
+            <input type="radio" id="rec-3" name="rec">
+            Maybe
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Languages and Frameworks known
+            <small>(Check all that apply)</small>
+        </label>
+        <label for="inp-1">
+            <input type="checkbox" id="inp-1" name="inp">
+            C#
+        </label>
+        <label for="inp-2">
+            <input type="checkbox" id="inp-2" name="inp">
+            Java
+        </label>
+        <label for="inp-3">
+            <input type="checkbox" id="inp-3" name="inp">
+            Python
+        </label>
+        <label for="inp-4">
+            <input type="checkbox" id="inp-4" name="inp">
+            Spring
+        </label>
+        <label for="inp-5">
+            <input type="checkbox" id="inp-5" name="inp">
+            Django
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">Any comments or suggestions</label>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+    </div>
+
+    <button type="submit" value="submit">
+        Submit
+    </button>
+</form>
+</body>
+</html>
